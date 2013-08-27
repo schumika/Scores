@@ -22,6 +22,9 @@
 		A9BDFFBA17CBDEF400D935B8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BDFF9E17CBDEF400D935B8 /* CoreData.framework */; };
 		A9BDFFC217CBDEF400D935B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9BDFFC017CBDEF400D935B8 /* InfoPlist.strings */; };
 		A9BDFFC417CBDEF400D935B8 /* ScoresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDFFC317CBDEF400D935B8 /* ScoresTests.m */; };
+		A9BDFFCE17CBDF3F00D935B8 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BDFFCD17CBDF3F00D935B8 /* iPhoneStoryboard.storyboard */; };
+		A9BDFFD017CBDF6500D935B8 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BDFFCF17CBDF6500D935B8 /* iPadStoryboard.storyboard */; };
+		A9BDFFD317CBDFE100D935B8 /* FTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDFFD217CBDFE100D935B8 /* FTGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		A9BDFFBF17CBDEF400D935B8 /* ScoresTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScoresTests-Info.plist"; sourceTree = "<group>"; };
 		A9BDFFC117CBDEF400D935B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9BDFFC317CBDEF400D935B8 /* ScoresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoresTests.m; sourceTree = "<group>"; };
+		A9BDFFCD17CBDF3F00D935B8 /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = ../iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
+		A9BDFFCF17CBDF6500D935B8 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPadStoryboard.storyboard; path = ../iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		A9BDFFD117CBDFE100D935B8 /* FTGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGameViewController.h; sourceTree = "<group>"; };
+		A9BDFFD217CBDFE100D935B8 /* FTGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,10 @@
 			children = (
 				A9BDFFA917CBDEF400D935B8 /* FTAppDelegate.h */,
 				A9BDFFAA17CBDEF400D935B8 /* FTAppDelegate.m */,
+				A9BDFFCF17CBDF6500D935B8 /* iPadStoryboard.storyboard */,
+				A9BDFFCD17CBDF3F00D935B8 /* iPhoneStoryboard.storyboard */,
+				A9BDFFD117CBDFE100D935B8 /* FTGameViewController.h */,
+				A9BDFFD217CBDFE100D935B8 /* FTGameViewController.m */,
 				A9BDFFAF17CBDEF400D935B8 /* Images.xcassets */,
 				A9BDFFAC17CBDEF400D935B8 /* Scores.xcdatamodeld */,
 				A9BDFFA117CBDEF400D935B8 /* Supporting Files */,
@@ -231,6 +242,8 @@
 			files = (
 				A9BDFFA517CBDEF400D935B8 /* InfoPlist.strings in Resources */,
 				A9BDFFB017CBDEF400D935B8 /* Images.xcassets in Resources */,
+				A9BDFFCE17CBDF3F00D935B8 /* iPhoneStoryboard.storyboard in Resources */,
+				A9BDFFD017CBDF6500D935B8 /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BDFFD317CBDFE100D935B8 /* FTGameViewController.m in Sources */,
 				A9BDFFAB17CBDEF400D935B8 /* FTAppDelegate.m in Sources */,
 				A9BDFFAE17CBDEF400D935B8 /* Scores.xcdatamodeld in Sources */,
 				A9BDFFA717CBDEF400D935B8 /* main.m in Sources */,
@@ -371,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scores/Scores-Prefix.pch";
 				INFOPLIST_FILE = "Scores/Scores-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -384,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scores/Scores-Prefix.pch";
 				INFOPLIST_FILE = "Scores/Scores-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
